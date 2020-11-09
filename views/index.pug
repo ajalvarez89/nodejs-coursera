@@ -33,17 +33,19 @@ block content
             a(href='https://startbootstrap.com/theme/grayscale/') the preview page
             |                             . The theme is open source, and you can use it for any purpose, personal or commercial.
       img.img-fluid(src='/images/ipad.png' alt='')
+
   //- // Projects
   section#projects.projects-section.bg-light
     .container
       .row.align-items-center.no-gutters.mb-4.mb-lg-5
-        .col-xl-8.col-lg-7
-          img.img-fluid.mb-3.mb-lg-0(src='/images/bg-masthead.jpg' alt='')
-        .col-xl-4.col-lg-5
-          .featured-text.text-center.text-lg-left
-            h4 Shoreline
-            p.text-black-50.mb-0
-              | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+        #main_map
+        //- .col-xl-8.col-lg-7
+        //-   img.img-fluid.mb-3.mb-lg-0(src='/images/bg-masthead.jpg' alt='')
+        //- .col-xl-4.col-lg-5
+        //-   .featured-text.text-center.text-lg-left
+        //-     h4 Shoreline
+        //-     p.text-black-50.mb-0
+        //-       | Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
       //- // Project One Row
       .row.justify-content-center.no-gutters.mb-5.mb-lg-0
         .col-lg-6
@@ -116,8 +118,6 @@ block content
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
   script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+  script(src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js' integrity='sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==' crossorigin='')
   script(src='/javascripts/scripts.js')
-
-
-
-
+  script(src='/javascripts/map.js')
